@@ -6,17 +6,17 @@
 CPP_SRCS += \
 ../src/bot.cpp \
 ../src/dsl_project.cpp \
-../src/single.cpp 
+../src/two_player.cpp 
 
 OBJS += \
 ./src/bot.o \
 ./src/dsl_project.o \
-./src/single.o 
+./src/two_player.o 
 
 CPP_DEPS += \
 ./src/bot.d \
 ./src/dsl_project.d \
-./src/single.d 
+./src/two_player.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

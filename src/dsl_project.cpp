@@ -7,8 +7,8 @@
 //============================================================================
 
 #include <iostream>
-#include "single_player.h"
 #include "bot.h"
+#include "two_player.h"
 using namespace std;
 
 int main()
@@ -20,10 +20,11 @@ int main()
 	switch(choice)
 	{
 	case 1:
-		single_player();
+		bot_play();
 		break;
 	case 2:
-		bot_play();
+		two_player();
+		break;
 	}
 	return 0;
 }

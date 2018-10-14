@@ -8,7 +8,8 @@
 
 #include <iostream>
 #include <fstream>
-#include "single_player.h"
+
+#include "two_player.h"
 
 using namespace std;
 
@@ -332,7 +333,7 @@ void move ()
         	}
         	else if (Flag == 0)
         	{
-        		cout << "ERROR:\n INVALID MOVE\n Enter Input again!\n";
+        		cout << "ERROR:\nINVALID MOVE\nEnter Input again!\n";
         	}
         }
         else
@@ -402,7 +403,7 @@ void initBoard () //initializes the Board state to starting state at the beginni
         Board[4][i] = 'W';
     }
 }
-void single_player ()
+void two_player ()
 {
 	fstream fobj;
 	fobj.open("log_file.txt",ios::app|ios::out);
@@ -426,7 +427,6 @@ void single_player ()
        	else
        	{
        		cout<<"Enter input again!\n";
-       		move();
        	}
        	if(Bm==5)
        	{
